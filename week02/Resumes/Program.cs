@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 
 
 class Program
@@ -23,9 +24,18 @@ class Program
         job2._jobTitle = "Software D.";
         job2._company = "Google";
         job2._startYear = 2001;
-        job2._endYear = 2025;
+    job2._endYear = 2025;
 
-      
+    job2.Display();
+
+    Resume myResume = new Resume();
+
+    myResume._jobs.Add(job1);
+    myResume._jobs.Add(job2);
+
+    myResume.Display();
+   
+
         
     }
 }
