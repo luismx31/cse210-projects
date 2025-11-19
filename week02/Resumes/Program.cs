@@ -26,7 +26,7 @@ class Program
         job2._startYear = 2001;
     job2._endYear = 2025;
 
-    job2.Display();
+    Console.WriteLine($"This is the company name:{ job2._company}");
 
     Resume myResume = new Resume();
 
